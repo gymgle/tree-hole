@@ -1,0 +1,9 @@
+{% if lastest_msg_list %}
+    <ul>
+    {% for msg in lastest_msg_list %}
+        <li>{{ msg.content }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>Aha~ There's NO secrets in tree hole. Maybe sometime later~</p>
+{% endif %}
